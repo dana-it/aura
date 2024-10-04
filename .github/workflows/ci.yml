@@ -47,7 +47,7 @@ jobs:
         run: php artisan key:generate
 
       - name: Run migrations
-        run: php artisan migrate --database=sqlite --force
+        run: php artisan migrate --force
 
       - name: Run Tests
         run: php artisan test
