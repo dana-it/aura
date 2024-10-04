@@ -14,10 +14,11 @@ jobs:
 
     services:
       mysql:
-        image: mysql:5.7
+        image: mysql:latest
         env:
           MYSQL_DATABASE: laravel
           MYSQL_USER: sail
+          MYSQL_ALLOW_EMPTY_PASSWORD: 1
           MYSQL_PASSWORD: password
         ports:
           - 3306:3306
