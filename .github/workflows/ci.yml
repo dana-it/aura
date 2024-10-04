@@ -45,6 +45,9 @@ jobs:
 
       - name: Generate Application Key
         run: php artisan key:generate
+      
+      - name: Wait for MySQL to be ready
+        run: sleep 30
 
       - name: Verify MySQL Connection
         run: |
